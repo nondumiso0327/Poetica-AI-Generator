@@ -1,59 +1,88 @@
-body{
-    background: linear-gradient(83deg, #e6fa72 -1%, #62ffb8 58%);
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
-.container{
-margin: 120px auto;
-max-width: 600px;
-background-color: #7cb6f5;
-border-radius: 10px;
 
+.container {
+  margin: 80px auto;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+ background: linear-gradient(135deg, #e6fa72 -1%, #62ffb8 58%);
 }
-header{
-    margin-bottom: 30px;
-}
-h1{
-text-align: center;
-font-size: 36px;
-line-height: 1.5;
-color: #0f121b;
-padding-top: 5px;
-}
-form{
-    padding: 30px;
-    background-color: #68679b;
-    display: flex;
 
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #1d2135;
+  margin: 0;
 }
-.poem-input{
-    padding: 16px;
-    width: 70%;
-    border: 1px solid grey;
-    border-radius: 10px;
-    font-size: 14px;
-    color: #060a16;
+
+form {
+  display: flex;
+  gap: 10px;
+  padding: 30px;
+  background-color: #34324a;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.submittbtn{
-    padding: 15px;
-    width: 20%;
-    border: 1px solid grey;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: bold;
-    color: #dcdfe7;
-    background-color: rgb(197, 121, 241);
-}
-.poem{
+
+.poem-input {
+  flex: 1 1 70%;
+  padding: 15px;
   font-size: 16px;
-  padding: 20px;
-  color: #060a16;
-  line-height: 2;
-  border-left: px solid #885df1;
-  box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  
 }
+
+.submittbtn {
+  flex: 1 1 25%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background-color: #1e0736;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submittbtn:hover {
+  background-color: #360d5a;
+}
+
+.poem {
+  padding: 25px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #1b1c1f;
+  background: linear-gradient(135deg, #e6fa72 -1%, #62ffb8 58%);
+  border-top: 1px solid #ddd;
+  min-height: 100px;
+}
+
 footer {
   text-align: center;
-  font-size: 13px;
-  margin-top: 30px;
-  padding-bottom: 5px;
+  font-size: 16px;
+  padding: 20px;
+  background-color: #fff;
+  color: #200425;
+}
+
+footer a {
+  color: #4c075e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #000;
+  text-decoration: underline;
 }
