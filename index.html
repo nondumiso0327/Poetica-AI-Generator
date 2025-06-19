@@ -7,6 +7,7 @@
     <title>AI Poem Generator</title>
 </head>
 <body>
+  <div class="container">
   <header>
     <h1>Poetica AI Generator</h1>
   </header>
@@ -14,12 +15,13 @@
   <form>
     <input type="text" placeholder="Enter the topic of the poem" autofocus
     required
-    autocomplete="off"/>
-    
-    <input type="submit"/>
+    autocomplete="off"
+    class="poem-input" />
+
+    <input type="submit" class="submittbtn"/>
   </form>
 </main>
-<div>
+<div class="poem">
   The poem will go here
 </br>
  the poem will go here
@@ -33,6 +35,7 @@
      <a href="https://poeticagenerator.netlify.app/" target="_blank"
         > Netlify</a>.
 </footer>
+  </div>
  <script src="index.js"></script>   
 </body>
 </html>
