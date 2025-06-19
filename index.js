@@ -1,7 +1,12 @@
 function generatePoem(event) {
     event.preventDefault();
 
-    alert("generating poem");
+ new Typewriter("#poem", {
+  strings: "In quiet winds the soul can hear",
+  autoStart: true,
+  Delay: 1,
+  cursor: "",
+});
 }
     
 let poemFormGenerator = document.querySelector("#point-generator");
