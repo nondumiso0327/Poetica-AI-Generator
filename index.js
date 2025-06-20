@@ -1,5 +1,5 @@
 function displayPoem(response) {
-    console.log(" Poem generated")
+
  new Typewriter("#poem", {
   strings: response.data.answer,
   autoStart: true,
@@ -18,13 +18,8 @@ function generatePoem(event) {
      
     let poemElement = document.querySelector("#poem");
     poemElement.classList.remove("hidden");
-    
-
-
+    poemElement.innerHTML = "✨ Crafting your poem...";
     axios.get(apiUrl).then(displayPoem);
-
- 
-}
-    
+}  
 let poemFormGenerator = document.querySelector("#point-generator");
 poemFormGenerator.addEventListener("submit", generatePoem);
